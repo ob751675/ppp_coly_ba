@@ -1,0 +1,192 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --font-family: 'Arial', sans-serif;
+    --header-height: 400px;
+    --section-padding: 50px;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.header-background {
+    background-image: url('r&t.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+.two-columns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.column {
+    width: 45%;
+}
+
+.section {
+    padding: var(--section-padding);
+    text-align: center;
+    color: #000;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.section-title {
+    font-size: 2em;
+    margin: 0 0 20px;
+}
+
+.section-description {
+    font-size: 1.2em;
+    margin: 0 0 20px;
+}
+
+.section-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-list li {
+    margin: 0 15px;
+}
+
+.section-list li:before {
+    content: "•";
+    margin-right: 5px;
+}
+
+.section-list li:first-child:before {
+    content: "";
+    margin-right: 0;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.image:hover img {
+    transform: scale(1.1);
+}
+
+.footer {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+
+/* Additional styles from the second CSS block */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#icon img {
+    width: 30px;
+    margin: 0 10px;
+}
